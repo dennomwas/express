@@ -1,0 +1,10 @@
+extends layout
+block content
+    section#mainContent
+        each color in colors
+            ul
+                li= color
+    h3= prompt
+    if hint
+        p 
+            i Hint: #{hint}
